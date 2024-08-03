@@ -53,18 +53,35 @@ print('{}, {}. Soy {}. {despedida}'.format(a.title(), b, 'Juan', despedida = 'Ch
 #DIFICULTAD EXTRA
 
 def palindrome(a, b):
+    '''Función que valida si dos argumentos son políndromos o no. Sin return.
+
+    Args:
+        a (str): puede o no ser polídromo del argumento b.
+        b (str): puede o no ser polídromo del argumento a.
+    '''
     if a == b[::-1]:
         print('{} y {} son polídromos.'.format(a,b))
     else:
         print('{} y {} no son polídromos.'.format(a,b))
 
 def anagram(a, b):
+    '''Función que valida si dos argumentos son anagramas o no. Sin return.
+
+    Args:
+        a (str): puede o no ser anagrama del argumento b.
+        b (str): puede o no ser anagrama del argumento a.
+    '''
     if sorted(a) == sorted(b):
         print('{} y {} son anagramas.'.format(a,b))
     else:
         print('{} y {} no son anagramas.'.format(a,b))
 
 def isogram(a):
+    '''Función que determina si una palabra es un isograma. Sin return.
+
+    Args:
+        a (str): ingresar cualquier palabra.
+    '''
     if len(a) == len(set(a)):
         print('{} es un isograma.'.format(a))
     else:
