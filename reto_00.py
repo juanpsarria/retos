@@ -1,4 +1,4 @@
-#SINTAXIS, VARIABLES, TIPOS DE DATOS Y HOLA MUNDO
+# SINTAXIS, VARIABLES, TIPOS DE DATOS Y HOLA MUNDO
 
 '''
 - Crea un comentario en el código y coloca la URL del sitio web oficial del lenguaje de programación

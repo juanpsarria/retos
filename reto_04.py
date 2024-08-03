@@ -1,4 +1,4 @@
-#CADENAS DE CARACTERES
+# CADENAS DE CARACTERES
 
 '''
 Muestra ejemplos de todas las operaciones que puedes realizar con cadenas de caracteres

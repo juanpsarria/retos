@@ -1,4 +1,4 @@
-#OPERADORES Y ESTRUCTURAS DE CONTROL
+# OPERADORES Y ESTRUCTURAS DE CONTROL
 
 '''
 * - Crea ejemplos utilizando todos los tipos de operadores de tu lenguaje:

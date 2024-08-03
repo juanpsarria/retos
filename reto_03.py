@@ -1,4 +1,4 @@
-#ESTRUCTURAS DE DATOS
+# ESTRUCTURAS DE DATOS
 
 '''
 - Muestra ejemplos de creación de todas las estructuras soportadas por defecto en tu lenguaje.

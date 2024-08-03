@@ -1,4 +1,4 @@
-#FUNCIONES Y ALCANCE
+# FUNCIONES Y ALCANCE
 
 '''
 - Crea ejemplos de funciones básicas que representen las diferentes
