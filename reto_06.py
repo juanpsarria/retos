@@ -12,7 +12,8 @@ sucesión de Fibonacci (la función recibe la posición).
 '''
 
 def recursividad(n):
-    '''Función que devuelve el número ingresado y va disminuyendo hasta llegar al cero.
+    '''
+    Función que devuelve el número ingresado y va disminuyendo hasta llegar al cero.
 
     Args:
         n (int): El argumento debe ser un número positivo.
@@ -29,7 +30,8 @@ recursividad(100)
 # DIFICULTAD EXTRA
 
 def factorial(n):
-    '''Función que calcula el factorial del argumento.
+    '''
+    Función que calcula el factorial del argumento.
 
     Args:
         n (int): El argumento debe ser >= 1.
@@ -45,8 +47,9 @@ def factorial(n):
 print(factorial(4))
 
 def fibonacci(n):
-    '''Fibonacci es una serie de números en la que cada número es la suma 
-    de los dos números anteriores. 
+    '''
+    Fibonacci es una serie de números en la que cada número es la suma 
+    de los dos números anteriores.
 
     Args:
         n (int): El argumento debe ser mayor o igual a 0, indica la posición de la sucesión de Fibonacci que se quiere calcular.
