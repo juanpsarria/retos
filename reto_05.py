@@ -92,12 +92,8 @@ c,d = intercambiar_variables(a, b)
 print('El valor original de las variables es',a, b)
 print('El valor invertido es',c, d)
 
-def intercambiar_variables_2(a, b):
-    a, b = b, a
-    return a, b
-
-a = [1, 2, 3]
-b = [4, 5, 6]
-c,d = intercambiar_variables_2(a, b)
-print('El valor original de las variables es',a, b)
-print('El valor invertido es',c, d)
+e = [1, 2, 3]
+f = [4, 5, 6]
+g,h = intercambiar_variables(e, f)
+print('El valor original de las variables es',e, f)
+print('El valor invertido es',g, h)
