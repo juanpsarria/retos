@@ -47,7 +47,13 @@ print(stack)
 paginas = ['home', 'productos', 'servicios', 'historia', 'contacto']
 
 while paginas:
-    navegar = input(f'Ingrese para navegar: {paginas}, o el nombre de la nueva web. Si se quiere mover puede utilizar los comandos adelante o atrás. Fin para salir. ').lower()
+    '''
+    Ingresar primero una de las páginas existentes en la lista paginas para ubicarse. Luego se
+    puede ingresar otro elemento de la lista, adelante y atrás para moverse entre ellos, y fin para
+    terminar el bucle while.
+    Si se ingresa otro valor, se va a agregar a la lista paginas.
+    '''
+    navegar = input(f'Ingrese primero para navegar: {paginas}, o el nombre de la nueva web. Luego, para moverse puede utilizar los nombres de las páginas o los comandos adelante o atrás. Fin para salir. ').lower()
     try:
         if navegar in paginas:
             print(f'Estás en: {navegar}')
@@ -66,7 +72,22 @@ while paginas:
                 actual = paginas.index(navegar)
                 print(f'Estás en la nueva web: {navegar}')
     except IndexError:
-        actual -= 1
+        actual = 0
         print(f'Has llegado al final de la lista. Estás en: {paginas[actual]}.')
     finally:
         navegar
+
+
+documentos = ['doc1', 'doc2', 'doc3']
+
+while documentos:
+    ingreso = input('Ingrese el nombre del nuevo documento o imprimir, si así lo desea.').lower()
+    
+    if ingreso == 'imprimir':
+        print(f'Imprimiendo documento: {documentos.pop(0)}')
+        print(documentos)
+    else:
+        documentos.append(ingreso)
+        print(f'Nuevo documento agregado a la cola: {documentos}.')
+else:
+    print('La cola de documentos se ha vaciado.')
