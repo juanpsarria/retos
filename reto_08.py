@@ -29,24 +29,29 @@ new_user.get_user()
 
 # DIFICULTAD EXTRA
 
-class Pila:
-    def __init__(self, lista):
-        self.lista = [lista]
+class Stack:
+    def __init__(self):
+        self.stack = []
 
     def añadir(self, el):
-        self.lista.append(el)
+        self.stack.append(el)
         print(f'Se añadió {el} a la pila.')
     
     def eliminar(self):
-        print(f'Se eliminó {self.lista.pop()} de la pila.')
+        if len(self.stack) == 0:
+            print('La pila está vacía.')
+        else:
+            print(f'Se eliminó {self.stack.pop()} de la pila.')
     
     def cant_de_el(self):
-        return len(self.lista)
+        return len(self.stack)
     
     def contenido(self):
-        print(f'Elementos en la pila: {self.lista}')
+        for item in reversed(self.stack):
+            print(item)
 
-nueva_pila = Pila(1)
+nueva_pila = Stack()
+nueva_pila.añadir(1)
 nueva_pila.añadir(2)
 nueva_pila.añadir(3)
 nueva_pila.contenido()
@@ -54,24 +59,27 @@ nueva_pila.eliminar()
 print(f'Cantidad de elementos en la pila: {nueva_pila.cant_de_el()}')
 nueva_pila.contenido()
 
-class Cola:
-    def __init__(self, lista):
-        self.lista = [lista]
+class Queue:
+    def __init__(self):
+        self.queue = []
 
     def añadir(self, el):
-        self.lista.append(el)
+        self.queue.append(el)
         print(f'Se añadió {el} a la cola.')
     
     def eliminar(self):
-        print(f'Se eliminó {self.lista.pop(0)} de la cola.')
+        if len(self.queue) == 0:
+            print('La cola está vacía.')
+        else:
+            print(f'Se eliminó {self.queue.pop(0)} de la cola.')
     
     def cant_de_el(self):
-        return len(self.lista)
+        return len(self.queue)
     
     def contenido(self):
-        print(f'Elementos en la cola: {self.lista}')
+        print(f'Elementos en la cola: {self.queue}')
 
-nueva_cola = Cola('Juan')
+nueva_cola = Queue()
 nueva_cola.añadir('Pedro')
 nueva_cola.añadir('José')
 nueva_cola.añadir('Ana')
